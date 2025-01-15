@@ -3,12 +3,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
+    text-align: center;
 }
 
 nav ul {
@@ -17,6 +19,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -27,25 +30,40 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 .about-us {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .about-us h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    color: #333;
 }
 
 .about-us .content {
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .about-us .section {
+    flex: 1 1 300px;
+    max-width: 350px;
     margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-us .section img {
@@ -57,20 +75,22 @@ nav ul li a {
 
 .about-us .section h2 {
     font-size: 1.8em;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 .about-us .section p {
     font-size: 1.1em;
     color: #555;
+    line-height: 1.8;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    padding: 15px 0;
+    position: relative;
     width: 100%;
-    bottom: 0;
+    margin-top: 40px;
 }
